@@ -1,0 +1,211 @@
+/* CSS for Navigation Start */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(225, 224, 224, 0.783);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logo a {
+  display: flex;
+  height: 80px;
+  width: 100px;
+}
+.navbar-lists ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-lists li {
+  list-style: none;
+}
+.navbar-lists li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  display: block;
+}
+.navbar-lists li:hover {
+  background-color: rgb(32, 211, 95);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-lists {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-lists ul {
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(35, 88, 114, 0.062);
+  }
+  .navbar-lists li {
+    text-align: center;
+    border-top: 1px solid rgba(169, 162, 162, 0.4);
+  }
+  .navbar-lists li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-lists.active {
+    display: flex;
+  }
+}
+/* CSS for Navigation End */
+
+/* CSS for body part Start */
+.home-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.info {
+  text-align: center;
+}
+.info h1 {
+  margin-bottom: 0px;
+}
+.info p {
+  margin-top: 0px;
+}
+.form-row {
+  background-color: #f0f0f0;
+  border: 1px solid #cfcfcf;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  display: grid;
+}
+div {
+  display: block;
+}
+.employee-status-box {
+  height: 30px;
+  padding: 6px 55px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #000;
+  border-radius: 4px;
+}
+.months {
+  height: 30px;
+  padding: 6px 55px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #000;
+  border-radius: 4px;
+}
+h2 {
+  font-size: 22px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+.income-form-end {
+  border-top: 1px solid #25518c;
+  padding-top: 15px;
+}
+label {
+  font-weight: 700;
+}
+.form-row-2 {
+  float: left;
+  width: 50%;
+}
+@media (max-width: 978px) {
+  .form-row-2 {
+    float: left;
+  }
+}
+@media (max-width: 500px) {
+  .form-row-2 {
+    float: none;
+    width: 100%;
+  }
+}
+.form-row-2 input {
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  text-align: right;
+}
+
+/* Row 3 */
+.form-column-1 {
+  width: 50%;
+  float: left;
+}
+.form-column-1 button {
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.form-column-1 .button-1 {
+  background-color: #f44336;
+  float: left;
+}
+.form-column-1 .button-2 {
+  background-color: #4caf50;
+  float: right;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group-total {
+  width: 80%;
+  border-top: 2px solid #000000;
+  padding-top: 15px;
+}
+.home-container label {
+  float: left;
+  margin: 5px 10px 0 0;
+  width: 100%;
+  max-width: 185px;
+}
+/* CSS for body part End */
+
+/* CSS for Footer start */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #33383b;
+  color: #ffffff;
+}
+footer a {
+  color: #a9ceff;
+}
+/* CSS for Footer end */

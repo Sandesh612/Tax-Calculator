@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="image/logo.PNG" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/calculate.css" />
+    <!-- Load an icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Tax Sansar</title>
+    <script defer src="js/calculate.js"></script>
+  </head>
+  <body>
+    <!-- Navigation section Start -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="image/logo.PNG" alt="logo of tax sansar" />
+        </a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-lists">
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="news.html"><i class="fa fa-newspaper-o"></i> News</a>
+          </li>
+          <li>
+            <a href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation section End -->
+    <!-- Home page of Sansar Start -->
+    <div class="home-container">
+      <div class="info">
+        <h1>Tax Sansar, Nepal</h1>
+        <p>
+          Tax Sansar is a personal income tax calculator and design on the
+          basics of finance act 2077/78 (2020/21) of Nepal.
+        </p>
+      </div>
+      <div class="tax-form">
+        <form id="tax_form">
+          <div class="form-row">
+            <div class="row">
+              <div class="form-group">
+                <label class="status">Marital Status</label>
+                <select class="employee-status-box" id="status">
+                  <option value="Married">Unmarried</option>
+                  <option value="Unmarried">Married</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="row">
+              <div class="form-row-2">
+                <h2>Income</h2>
+                <div class="form-group">
+                  <label for="monthly-salary">Monthly Salary</label>
+                  <input
+                    id="monthly-salary"
+                    type="number"
+                    min="1"
+                    name="monthly-salary"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="months">No. of Months</label>
+                  <select id="months-id" class="months">
+                    <option value="yearly">Yearly</option>
+                    <option value="monthly">Monthly</option>
+                  </select>
+                  <!-- <input id="months" type="number" min="1" required /> -->
+                </div>
+                <div class="form-group">
+                  <label for="bonus">Monthly Bonus</label>
+                  <input id="bonus" type="number" min="0" />
+                </div>
+              </div>
+              <div class="form-row-2">
+                <h2>Deduction</h2>
+                <div class="form-group">
+                  <label for="provident-fund">Provident Fund</label>
+                  <input id="provident-fund" type="number" min="0" />
+                </div>
+                <div class="form-group">
+                  <label for="trust">Citizen Investment Trust</label>
+                  <input id="trust" type="number" min="0" />
+                </div>
+                <div class="form-group">
+                  <label for="insurance">Insurance</label>
+                  <input id="insurance" type="number" min="0" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-row-3">
+              <div class="form-column-1">
+                <button class="button-1" type="reset" value="Reset">
+                  Reset
+                </button>
+              </div>
+              <div class="form-column-1">
+                <button
+                  type="submit"
+                  class="button-2"
+                  id="submit"
+                  value="Calculate"
+                  data-modal-target="#modal"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Net Tax Liability (yearly):</label>
+                <input type="number" id="yearly-tax" />
+              </div>
+              <div class="form-group">
+                <label>Net Tax Liability (monthly):</label>
+                <input type="number" id="monthly-tax" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Home page of Sansar End -->
+    <!-- Footer Start -->
+    <footer>
+      <p>
+        <a href="index.html">Terms</a> | <a href="index.html">Privacy</a> |
+        &copy; Tax Sansar, All Rights Reserved<br />
+        <a href="index.html">info.taxsansar@gmail.com</a>
+      </p>
+    </footer>
+    <!-- Footer End -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

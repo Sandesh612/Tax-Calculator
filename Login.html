@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="css/Login.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <!-- Load an icon library -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="image/logo.png" alt="logo of tax sansar" />
+      </a>
+    </div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-lists">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="news.html"><i class="fa fa-newspaper-o"></i>News</a>
+        </li>
+        <li>
+          <a href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main_container">
+    <div class="container">
+      <form class="form" id="Login">
+        <h1 class="form__title">Login</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            autofocus
+            placeholder="Email"
+          />
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Password"
+          />
+        </div>
+        <div><button class="form__button">Login</button></div>
+
+        <button
+          onclick="location.href='home.html'"
+          type="button"
+          class="form__button2"
+        >
+          Cancel
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
